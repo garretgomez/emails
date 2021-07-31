@@ -3,7 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no, url=no">
+    <meta name="x-apple-disable-message-reformatting">
+    <meta name="color-scheme" content="light dark">
+    <meta name="supported-color-schemes" content="light dark">
+     <!--[if mso]>
+    <noscript>
+        <xml>
+        <o:OfficeDocumentSettings>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+        </xml>
+    </noscript>
+    <![endif]-->
     <style type="text/css">
         .heading{
             text-align: center;
@@ -12,7 +25,7 @@
         .container{
             background-color: #f2f2f2;
             margin: 0 20px 0 20px;
-            padding: 1rem;
+            padding: 16px;
             font-size: 18x;
         }
         h3{
@@ -52,8 +65,9 @@
             display: flex;
             /*justify-content: space-between;*/
             align-items: center;
-            padding: 0.25rem;
+            padding: 4px;
             margin: 45px 0;
+            max-width: 600px;
         }
         .social a img{
             padding:0 70px;
@@ -72,72 +86,75 @@
     </style>
 </head>
 <body style="width:600px; max-width: 100%; margin: 0 auto; padding: 0; box-sizing: border-box; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #ccc;">
-    <div style="background-color: #fff; width:600px; max-width:100%;">
-        <img id="logo" src="https://www.dropbox.com/s/yh6stm6c2dyqr0b/newera.png?raw=1" width="50%" style="margin:0 auto; max-width: 100%; display: block; height: 25%;">
-
-        <div class="heading">
-            <h1>Order Confirmation</h1>
-            <h2>Thank you for ordering with New Era!</h2>
-        </div>
-        <div class="container">
-            <h3>Order Details</h3>
-            <div class="details">
-                <p>Order #: 829331</br>
-                Ship to: Tony Johns<br>
-                Address: 2395 Wagner Houses Apt 2C</P>
-                <p>Estimated arrival: Wednesday April 29</p>
+    <div role="article" aria-roledescription="email" aria-label="new era order">
+        <div style="background-color: #fff; width:600px; max-width:100%;">
+            <img id="logo" src="https://www.dropbox.com/s/yh6stm6c2dyqr0b/newera.png?raw=1" width="50%" height="25%" style="margin:0 auto; max-width: 100%; display: block; height: 25%;">
+    
+            <div class="heading">
+                <h1>Order Confirmation</h1>
+                <h2>Thank you for ordering with New Era!</h2>
             </div>
-        
-            <table width="100%">
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td>Quantity</td>
-                    <td>Price</td>
-                </tr>
-                <tr>
-                    <td><img src="https://www.dropbox.com/s/42gk8qh1jeamd1k/usahat.jpg?raw=1" width="100px"></td>
-                    <td id="desc">
-                        <ul>
-                            <li><h4>USA hat</h4></li>
-                            <li>Model: Navy1Red</li>
-                            <li>SKU: 1000</li>
-                        </ul>
-                    </td>
-                    <td>1</td>
-                    <td>25</td>
-                </tr>
-                <tr>
-                    <td colspan="4"><hr></td>
-                </tr>
-                <tr id="total">
-                    <td><h4>Total:</h4></td>
-                    <td></td>
-                    <td><h5>1</h5></td>
-                    <td><h5>25</h5></td>
-                </tr>
-            </table>
-            <div class="btn">
-                <a id="order">View Order</a>
+            <div class="container">
+                <h3>Order Details</h3>
+                <div class="details">
+                    <p>Order #: 829331</br>
+                    Ship to: Tony Johns<br>
+                    Address: 2395 Wagner Houses Apt 2C</P>
+                    <p>Estimated arrival: Wednesday April 29</p>
+                </div>
+            
+                <table width="100%">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>Quantity</td>
+                        <td>Price</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://www.dropbox.com/s/42gk8qh1jeamd1k/usahat.jpg?raw=1" width="100px"></td>
+                        <td id="desc">
+                            <ul>
+                                <li><h4>USA hat</h4></li>
+                                <li>Model: Navy1Red</li>
+                                <li>SKU: 1000</li>
+                            </ul>
+                        </td>
+                        <td>1</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4"><hr></td>
+                    </tr>
+                    <tr id="total">
+                        <td><h4>Total:</h4></td>
+                        <td></td>
+                        <td><h5>1</h5></td>
+                        <td><h5>25</h5></td>
+                    </tr>
+                </table>
+                <div class="btn">
+                    <a id="order">View Order</a>
+                </div>
             </div>
-        </div>
-        <div class="social" style="width: 100%; max-width: 600px">
-            <a><img src="https://www.dropbox.com/s/l0yypqejy8e5kn2/facelogo.png?raw=1" width= "50px" max-height="100px"></a>
-            <a><img src="https://www.dropbox.com/s/iecjrmnxv5vvyeb/instaicon.jpg?raw=1" width= "50px" max-height="100px"></a>
-            <a><img src="https://www.dropbox.com/s/jv8pc5p5je4ld1n/twitlogo.png?raw=1" width= "50px" max-height="100px"></a>
-        </div>
-        <footer>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sit cum amet, sequi numquam ipsum non neque reprehenderit ratione quas. <a style="text-decoration: underline;">Privacy Policy</a></p>
-            <p><a stlye="text-decoration: underline;">Click here</a> to read about our return policy</p>
-            <p>This email was sent to emailmail.com by New Era &copy;<br>
-            New Era Way New York, New York 90000</p>
-        </footer>
-        <div class="bottom">
-            <a href="promotion.html" style="color: #fff;">Promo</a>
-            <a href="#" style="color: #fff;">Order</a>
-            <a href="monthly.html" style="color: #fff;">Monthly</a>
+            <div class="social" style="width: 100%; max-width: 600px">
+                <a><img src="https://www.dropbox.com/s/l0yypqejy8e5kn2/facelogo.png?raw=1" width= "50px" max-height="100px"></a>
+                <a><img src="https://www.dropbox.com/s/iecjrmnxv5vvyeb/instaicon.jpg?raw=1" width= "50px" max-height="100px"></a>
+                <a><img src="https://www.dropbox.com/s/jv8pc5p5je4ld1n/twitlogo.png?raw=1" width= "50px" max-height="100px"></a>
+            </div>
+            <footer>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sit cum amet, sequi numquam ipsum non neque reprehenderit ratione quas. <a style="text-decoration: underline;">Privacy Policy</a></p>
+                <p><a stlye="text-decoration: underline;">Click here</a> to read about our return policy</p>
+                <p>This email was sent to emailmail.com by New Era &copy;<br>
+                New Era Way New York, New York 90000</p>
+            </footer>
+            <div class="bottom">
+                <a href="promotion.html" style="color: #fff;">Promo</a>
+                <a href="#" style="color: #fff;">Order</a>
+                <a href="monthly.html" style="color: #fff;">Monthly</a>
+            </div>
         </div>
     </div>
+    
     
 </body>
 </html>

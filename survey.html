@@ -3,7 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no, url=no">
+    <meta name="x-apple-disable-message-reformatting">
+    <meta name="color-scheme" content="light dark">
+    <meta name="supported-color-schemes" content="light dark">
+     <!--[if mso]>
+    <noscript>
+        <xml>
+        <o:OfficeDocumentSettings>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+        </xml>
+    </noscript>
+    <![endif]-->
     <style>
         *{
             padding:0;
@@ -35,7 +48,7 @@
             background-color: red;
             color: #fff;
             text-align: center;
-            padding: 1rem;
+            padding: 16px;
             max-width: 500px;
         }
         .survey p{
@@ -56,7 +69,7 @@
         .footer{
             background-color: #fff;
             color:rgb(158, 157, 157);
-            padding: 1rem;
+            padding: 16px;
             font-size: 12px;
         }
         .footer a{
@@ -65,33 +78,35 @@
     </style>
 </head>
 <body>
-    <div class="header">
-        <img src="https://www.dropbox.com/s/lyfg6m9qcpgol67/aaa.jpg?raw=1" width="150px" height="100px">
+    <div role="article" aria-roledescription="email" aria-label="AAA survey">
+        <div class="header">
+            <img src="https://www.dropbox.com/s/lyfg6m9qcpgol67/aaa.jpg?raw=1" width="150px" height="100px">
+            <div>
+                <h2>Auto Home Life</h2>
+            </div>
+        </div>
         <div>
-            <h2>Auto Home Life</h2>
+            <img src="https://www.dropbox.com/s/yhglurtyvblk5yq/aaabanner.PNG?raw=1" width="500px" heigh="100%">
         </div>
-    </div>
-    <div>
-        <img src="https://www.dropbox.com/s/yhglurtyvblk5yq/aaabanner.PNG?raw=1" width="500px" heigh="100%">
-    </div>
-    <div class="survey">
-        <p>Hi name</p>
-        <p>Thank you for choosing AAA Insurance</p>
-        <p>As a new customer to our service we would appreciate your feedback. Please take time to complete our 5 minute survey to let us know abour your experience to be entered to for a chance to win a <strong>$500 gift card</strong> .</p>
-        <div class="btn">
-            <a href="#">SURVEY</a>
+        <div class="survey">
+            <p>Hi name</p>
+            <p>Thank you for choosing AAA Insurance</p>
+            <p>As a new customer to our service we would appreciate your feedback. Please take time to complete our 5 minute survey to let us know abour your experience to be entered to for a chance to win a <strong>$500 gift card</strong> .</p>
+            <div class="btn">
+                <a href="#">SURVEY</a>
+            </div>
+            <p>Thank you, <br> AAA Insurance</p>
         </div>
-        <p>Thank you, <br> AAA Insurance</p>
-    </div>
-    <div class="footer">
-        <h2>Travel with someone you trust</h2>
-        <p>
-            2021 AAA Insurance<br>
-            Auto | Home | Life <br>
-            For any questions or comments contact us at (800)000-0000<br>
-            Email was sent to your email by AAA Insurance<br>
-            If you do not wish to reveive emails anymore <a href="#">unsubscribe</a> here
-        </p>
+        <div class="footer">
+            <h2>Travel with someone you trust</h2>
+            <p>
+                2021 AAA Insurance<br>
+                Auto | Home | Life <br>
+                For any questions or comments contact us at (800)000-0000<br>
+                Email was sent to your email by AAA Insurance<br>
+                If you do not wish to reveive emails anymore <a href="#">unsubscribe</a> here
+            </p>
+        </div>
     </div>
 </body>
 </html>
