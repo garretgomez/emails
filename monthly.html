@@ -18,11 +18,32 @@
     </noscript>
     <![endif]-->
     <style type="text/css">
+        .button{
+            padding: 16px; 
+            text-align: center;
+        }
+        .button a{
+            background-color:blueviolet; border-radius: 25px; color: #fff; padding:10px; text-decoration: none; font-size: 14px;
+        }
         a:hover{
             cursor: pointer;
         }
         .bottom a:hover{
             background-color: #000;
+        }
+        @media only screen and (max-width: 420px) {
+            table tr td > img:only-child{
+                width: 200px;
+            }
+            table tr td img{
+                width: 75px;
+            }
+            .button{
+                padding: 7px;
+            }
+            .button a{
+                font-size: 10px;
+            }
         }
     </style>
 </head>
@@ -61,20 +82,20 @@
                     <tr>
                         <td>
                             <img src="https://www.dropbox.com/s/12p3ug4xlkkl7yc/blade.jpg?raw=1" width="150px" alt="blade runner 2049 poster" style="display: block; margin-right: auto; margin-left: auto;">
-                            <div style="padding: 16px; text-align: center;">
-                                <a style="background-color:blueviolet; border-radius: 25px; color: #fff; padding:10px; text-decoration: none; font-size: 14px;" href="#">Watch Now</a>
+                            <div  class="button">
+                                <a  href="#">Watch Now</a>
                             </div>
                         </td>
                         <td>
                             <img src="https://www.dropbox.com/s/16apls8vln9fof7/judas.jpg?raw=1" width="150px" alt="judas and the black messiah poster" style="display: block; margin-right: auto; margin-left: auto;">
-                            <div style="padding: 16px; text-align: center;">
-                                <a style="background-color:blueviolet; border-radius: 25px; color: #fff; padding:10px; text-decoration: none; font-size: 14px;" href="#">Watch Now</a>
+                            <div  class="button">
+                                <a  href="#">Watch Now</a>
                             </div>
                         </td>
                         <td>
                             <img src="https://www.dropbox.com/s/b2tvn3nz339h92e/drsleep.jpg?raw=1" width="150px" alt="doctor sleep poster" style="display: block; margin-right: auto; margin-left: auto;">
-                            <div style="padding: 16px; text-align: center;">
-                                <a style="background-color:blueviolet; border-radius: 25px; color: #fff; padding:10px; text-decoration: none; font-size: 14px;" href="#">Watch Now</a>
+                            <div  class="button">
+                                <a  href="#">Watch Now</a>
                             </div>
                         </td>
                     </tr>
@@ -87,20 +108,20 @@
                     <tr>
                         <td>
                             <img src="https://www.dropbox.com/s/ww34blwpz16pqmf/watchmen.jpg?raw=1" width="150px" alt="wathmen poster" style="display: block; margin-right: auto; margin-left: auto;">
-                            <div style="padding: 16px; text-align: center; grid-column: 1 / span 1;">
-                                <a style="background-color:blueviolet; border-radius: 25px; color: #fff; padding:10px; text-decoration: none; font-size: 14px;" href="#">Watch Now</a>
+                            <div class="button">
+                                <a  href="#">Watch Now</a>
                             </div>
                         </td>
                         <td>
                             <img src="https://www.dropbox.com/s/jsqtts0umv5w739/raised.jpg?raw=1" width="150px" alt="raised by wolves poster" style="display: block; margin-right: auto; margin-left: auto;">
-                            <div style="padding: 16px; text-align: center; grid-column: 2 / span 1;">
-                                <a style="background-color:blueviolet; border-radius: 25px; color: #fff; padding: 10px; text-decoration: none; font-size: 14px;" href="#">Watch Now</a>
+                            <div class="button">
+                                <a href="#">Watch Now</a>
                             </div>
                         </td>
                         <td>
                             <img src="https://www.dropbox.com/s/s91tbcvrjo5pen4/southpark.jpg?raw=1" width="150px" alt="south park poster" style="display: block; margin-right: auto; margin-left: auto;">
-                            <div style="padding: 16px; text-align: center; grid-column: 3 / span 1;">
-                                <a style="background-color:blueviolet; border-radius: 25px; color: #fff; padding: 10px; text-decoration: none; font-size: 14px;" href="#">Watch Now</a>
+                            <div class="button">
+                                <a href="#">Watch Now</a>
                             </div>
                         </td>
                     </tr>

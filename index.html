@@ -20,9 +20,8 @@
     <![endif]-->
     <style type="text/css">
         #logo{
-            color:#000;
-            font-size: 48px;
-            text-align: center;
+            max-width: 100%; 
+            height: 300px;
         }
         nav{
             text-align: center;
@@ -80,6 +79,15 @@
             border-top: solid 2px #bbb;
             border-radius: 3px;
         }
+        #social{
+            display:flex;
+             align-items: center;
+              padding: 0.25rem;
+               margin: 45px 0; 
+        }
+        #social a img{
+            padding:0 70px;
+        }
         .terms{
             padding: 1rem;
             text-align: justify;
@@ -101,12 +109,39 @@
         .bottom a:hover{
            background-color: #000;
         }
+        @media only screen and (max-width: 420px){
+           #logo{
+               height: 200px;
+           }
+            nav ul li a{
+                font-size: 14px;
+            }
+            ul{
+                padding: 0;
+            }
+            .card h3{
+                font-size: 16px;
+            }
+            table img{
+                max-width: 100px;
+                max-height: 125px;
+            }
+           #social{
+               padding: 2px;
+               max-width: 420px;
+               width: 100%;
+               margin: 20px 0;
+           }
+           #social a img{
+               padding: 0 25px;
+           }
+        }
     </style>
 </head>
 <body style="max-width: 600px; margin: 0 auto; padding: 0; box-sizing: border-box; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; background-color: #ccc;">
     <div role="article" aria-roledescription="email" aria-label="oakley promo">
         <div style="background-color: #fff; max-width: 600px;">
-            <img src="https://www.dropbox.com/s/va7r06tfnkr7e69/oakley.jpg?raw=1" width="600px" style="max-width: 100%; height: 300px;">
+            <img src="https://www.dropbox.com/s/va7r06tfnkr7e69/oakley.jpg?raw=1" width="600px"  id="logo">
             <nav>
                 <ul>
                     <li><a>Sunglasses</a></li>
@@ -148,10 +183,10 @@
     
             <hr>
     
-            <div style="display:flex; align-items: center; padding: 0.25rem; margin: 45px 0;">
-                <a><img src="https://www.dropbox.com/s/l0yypqejy8e5kn2/facelogo.png?raw=1" width= "50px" max-height="100px" style="padding:0 70px;"></a>
-                <a><img src="https://www.dropbox.com/s/iecjrmnxv5vvyeb/instaicon.jpg?raw=1" width= "50px" max-height="100px" style="padding:0 70px;"></a>
-                <a><img src="https://www.dropbox.com/s/jv8pc5p5je4ld1n/twitlogo.png?raw=1" width= "50px" max-height="100px" style="padding:0 70px;"></a>
+            <div id="social">
+                <a><img src="https://www.dropbox.com/s/l0yypqejy8e5kn2/facelogo.png?raw=1" width= "50px" max-height="100px" ></a>
+                <a><img src="https://www.dropbox.com/s/iecjrmnxv5vvyeb/instaicon.jpg?raw=1" width= "50px" max-height="100px" ></a>
+                <a><img src="https://www.dropbox.com/s/jv8pc5p5je4ld1n/twitlogo.png?raw=1" width= "50px" max-height="100px" ></a>
             </div>
         
             <hr>
