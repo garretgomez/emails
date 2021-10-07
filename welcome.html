@@ -23,148 +23,128 @@
             margin: 0;
             box-sizing: border-box;
         }
-        body{
-            margin: 0 auto;
-            box-sizing: border-box;
-            background-color: rgb(219, 219, 219);
-            max-width: 500px;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        }
-        .header{
-            background-color: #fff;
-            color: #222;
-            padding: 16px;
-            text-align: center;
-            max-width: 500px;
-        }
-        .header img{
-            max-width: 500px;;
-        }
-        .header div{
-            border-top: solid 2px rgb(82, 82, 82);
-            
-        }
-        section{
-            background-color: #222;
-            color: #fff;
-            max-width: 500px;
-        }
+        
         h1{
             text-align: center;
             font-size: 30px;
             padding: 16px;
             max-width: 500px;
         }
-        .container{
-            display: flex;
-            justify-content: space-between;
-            padding: 16px;
-            line-height: 24px;
-            max-width: 500px;
-        }
-        .wrapper{
-            padding: 1rem;
-            max-width: 500px;
-        }
+        
         .btn{
             padding: 16px 0 16px 0;
         }
-        section a{
-            background-color: #222;
-            text-decoration: none;
-            color: #fff;
-            border: solid 2px #fff;
-            padding: 10px
-        }
-        .section img{
-            max-width: 200px;
-        }
-        .footer{
-            background-color: #222;
-            color:rgb(82, 82, 82);
-            padding: 16px;
-            max-width: 500px;
-        }
+        
         @media only screen and (max-width: 420px){
-            .header img{
-                max-width: 420px;
+            table tr td a{
+                padding: 5px;
             }
-            .container img{
-                width: 100px;
-                height: 100px;
-                padding-top: 20px;
+            table tr td img{
+                max-width: 150px;
+            }
+            table tr td table tr td{
+                padding: 0.5rem;
+                font-size: 14px;
             }
         }
     </style>
 </head>
-<body>
+<body style=" margin: 0 auto; box-sizing: border-box; background-color: rgb(219, 219, 219); max-width: 500px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
     <div role="article" aria-roledescription="email" aria-label="qobuz welcome">
-        <div class="header">
-            <img src="https://www.dropbox.com/s/83crl2rcvwio3g4/qobuz_logo_dark.png?raw=1" width="300px" alt="Image of Qobuz logo" >
-            <div>
-                <h1>Welcome to Qobuz</h1>
-                <p>Thank you for choosing our music streaming service. We hope you enjoy our millions of songs with Hi-res Audio.</p>
-            </div>
-        </div>
-        <section>
-            <h1>With Qobuz You Can</h1>
-            <div class="container">
-               
-                    <img src="https://www.dropbox.com/s/77xa6yo2g8d9an6/clay-banks-fEVaiLwWvlU-unsplash.jpg?raw=1" width="200px" alt="Image of records">
-                    <div class="wrapper">
-                        <h2>Streaming</h2>
-                        <p>Over 70 million tracks in the best sound quality available for streaming</p>
-                        <div class="btn">
-                            <a href="#">Discover our Plans</a>
-                        </div>
-                        
-                    </div>
-                    
-            </div>
-            <div class="container">
-                <img src="https://www.dropbox.com/s/kc0lgbbwtt2y7vi/brett-jordan-x3wDxZJx9qs-unsplash.jpg?raw=1" width="200px" alt="Image of CD's">
-                <div class="wrapper">
-                    <h2>Download</h2>
-                    <p>Buy your favorite albums in CD or Hi-Res quality and enjoy them forever</p>
-                    <div class="btn">
-                        <a href="#">Go to Store</a>
-                    </div>
-                    
-                </div>
-               
-            </div>
-            <div class="container">
-                <img src="https://www.dropbox.com/s/9b6aty0m7fh5gch/feliphe-schiarolli-oeHaXN3WiLk-unsplash.jpg?raw=1" width="200px" alt="Image of playlists on laptops">
-                <div class="wrapper">
-                    <h2>Playlists</h2>
-                    <p>Discover, listen, and share your favorite playlists</p>
-                    <div class="btn">
-                        <a href="#">Discover Playlists</a>
-                    </div>
-                    
-                </div>
-                
-            </div>
-            <div class="container">
-                <img src="https://www.dropbox.com/s/c9mbt972y0gd9tq/hires.jpg?raw=1" width="200px" alt="Image of Hi-Res Audio logo">
-                <div class="wrapper">
-                    <h2>Hi-Res Audio</h2>
-                    <p>Hi-Res Audio brings you the best audio available on any platform</p>
-                    <div class="btn">
-                        <a href="#">Learn more</a>
-                    </div>
-                    
-                </div>
-                
-            </div>
-            
-        </section>
-        <div class="footer">
-            <p>Qobuz &copy; 2021</p>
-            <p>Help | Support | FAQ</p>
-            <p>Email sent to by Qobuz</p>
-            <p>If you no longer wish to receive these emails <a>unsubscribe</a></p>
-        </div>
+        <table>
+            <tr>
+                <td>
+                    <table style="background-color: #fff; color: #222; padding: 16px; text-align: center; max-width: 500px;">
+                        <tr>
+                            <td style= "border-bottom: #222 solid 2px; width: 90%;"><img src="https://www.dropbox.com/s/83crl2rcvwio3g4/qobuz_logo_dark.png?raw=1" width="300px" alt="Image of Qobuz logo" style="max-width: 500px;"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h1>Welcome to Qobuz</h1>
+                                <p>Thank you for choosing our music streaming service. We hope you enjoy our millions of songs with Hi-res Audio.</p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table style="background-color: #222; color: #fff; max-width: 500px;">
+                        <tr>
+                            <td colspan="2">
+                                <h1 style="text-align: center; font-size: 30px; padding: 16px; max-width: 500px;">With Qobuz You Can</h1>
+                            </td>
+                        </tr>
+                        <tr style="padding: 16px; line-height: 24px; max-width: 500px;">
+                            <td style="padding: 5px 15px;">
+                                <img src="https://www.dropbox.com/s/77xa6yo2g8d9an6/clay-banks-fEVaiLwWvlU-unsplash.jpg?raw=1" width="200px" height="100%" alt="Image of records" >
+                            </td>
+                            <td id="desc" style="padding: 1rem; max-width: 500px;">
+                                <h2>Streaming</h2>
+                                <p style="margin-bottom: 10px;">Over 70 million tracks in the best sound quality available for streaming</p>
+                                <a href="#" style=" background-color: #222; text-decoration: none; color: #fff; border: solid 2px #fff; padding: 10px;">Discover Plans</a>
+                            </td>
+                        </tr>
+                        <tr style="padding: 16px; line-height: 24px; max-width: 500px;">
+                            <td style="padding: 5px 15px;">
+                                <img src="https://www.dropbox.com/s/kc0lgbbwtt2y7vi/brett-jordan-x3wDxZJx9qs-unsplash.jpg?raw=1" width="200px" height="100%" alt="Image of CD's">
+                            </td>
+                            <td style="padding: 1rem; max-width: 500px;">
+                                <h2>Download</h2>
+                                <p style="margin-bottom: 10px;">Buy your favorite albums in CD or Hi-Res quality and enjoy them forever</p>
+                                <a href="#" style=" background-color: #222; text-decoration: none; color: #fff; border: solid 2px #fff; padding: 10px;">Shop</a>
+                            </td>
+                        </tr>
+                        <tr style="padding: 16px; line-height: 24px; max-width: 500px;">
+                            <td style="padding: 5px 15px;">
+                                <img src="https://www.dropbox.com/s/9b6aty0m7fh5gch/feliphe-schiarolli-oeHaXN3WiLk-unsplash.jpg?raw=1" width="200px" height="100%" alt="Image of playlists on laptops">
+                            </td>
+                            <td style="padding: 1rem; max-width: 500px;">
+                                <h2>Playlists</h2>
+                                <p style="margin-bottom: 10px;">Discover, listen, and share your favorite playlists</p>
+                                <a href="#" style=" background-color: #222; text-decoration: none; color: #fff; border: solid 2px #fff; padding: 10px;">Discover Playlists</a>
+                            </td>
+                        </tr>
+                        <tr style="padding: 16px; line-height: 24px; max-width: 500px;">
+                            <td style="padding: 5px 15px;">
+                                <img src="https://www.dropbox.com/s/c9mbt972y0gd9tq/hires.jpg?raw=1" width="200px" height="100%" alt="Image of Hi-Res Audio logo">
+                            </td>
+                            <td style="padding: 1rem; max-width: 500px;">
+                                <h2>Hi-Res Audio</h2>
+                                <p style="margin-bottom: 10px;">Hi-Res Audio brings you the best audio available on any platform</p>
+                                <a href="#" style=" background-color: #222; text-decoration: none; color: #fff; border: solid 2px #fff; padding: 10px;">Learn more</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table style=" background-color: #222; color:rgb(82, 82, 82); padding: 16px; max-width: 500px; width: 100%;">
+                        <tr>
+                            <td>
+                                <p>Qobuz &copy; 2021</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Help | Support | FAQ</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Email sent to by Qobuz</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>If you no longer wish to receive these emails <a href="#" style="text-decoration: underline; color:rgb(82, 82, 82);">unsubscribe</a></p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
     </div>
     
 </body>
