@@ -18,7 +18,7 @@
     </noscript>
     <![endif]-->
     <style type="text/css">
-        .button{
+        /*.button{
             padding: 16px; 
             text-align: center;
         }
@@ -30,19 +30,33 @@
         }
         .bottom a:hover{
             background-color: #000;
+        }*/
+        .btn{
+            background-color:blueviolet; border-radius: 25px; color: #fff; padding:10px; text-decoration: none; font-size: 14px; cursor: pointer;
+        }
+        #banner{
+            width:100%;
+            max-width: 600px;
         }
         @media only screen and (max-width: 420px) {
             table tr td > img:only-child{
-                width: 200px;
+                max-width: 150px;
+                width: 100%;
             }
             table tr td img{
                 width: 75px;
             }
-            .button{
+           /* .button{
                 padding: 7px;
             }
             .button a{
                 font-size: 10px;
+            }*/
+            .btn{
+                 background-color:blueviolet; border-radius: 25px; color: #fff; padding:6px; text-decoration: none; font-size: 10px;
+            }
+            #banner{
+                max-width: 420px;
             }
         }
     </style>
@@ -74,7 +88,7 @@
                         <tr>
                             <td>
                                 <h1 style="text-align: center;">Exclusive This Month</h1>
-                                <img src="https://www.dropbox.com/s/iq8ilmclols1utq/jleague.jpg?raw=1" width="600px" alt="image of justice league poster" style="max-width: 100%;">
+                                <img src="https://www.dropbox.com/s/iq8ilmclols1utq/jleague.jpg?raw=1" width="600px" alt="image of justice league poster" id="banner" >
                                 <p style="margin:5px 15px; text-align: justify;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius voluptates alias quisquam commodi, in tenetur excepturi illo asperiores voluptatibus iusto aspernatur velit est libero, perspiciatis repellendus enim eum. Rerum, hic.</p>
                             </td>
                         </tr>
@@ -106,14 +120,14 @@
                             </td>
                         </tr>
                         <tr>
-                            <td style="padding: 16px; text-align: center; border-bottom: 1px solid rgb(182, 182, 182);">
-                                <a  href="#" style="background-color:blueviolet; border-radius: 25px; color: #fff; padding:10px; text-decoration: none; font-size: 14px;">Watch Now</a>
+                            <td class="button" style="padding: 16px; text-align: center; border-bottom: 1px solid rgb(182, 182, 182);">
+                                <a  href="#" class="btn">Watch Now</a>
                             </td>
                             <td style="padding: 16px; text-align: center; border-bottom: 1px solid rgb(182, 182, 182);">
-                                <a  href="#" style="background-color:blueviolet; border-radius: 25px; color: #fff; padding:10px; text-decoration: none; font-size: 14px;">Watch Now</a>
+                                <a  href="#" class="btn">Watch Now</a>
                             </td>
                             <td style="padding: 16px; text-align: center; border-bottom: 1px solid rgb(182, 182, 182);">
-                                <a  href="#" style="background-color:blueviolet; border-radius: 25px; color: #fff; padding:10px; text-decoration: none; font-size: 14px;">Watch Now</a>
+                                <a  href="#" class="btn">Watch Now</a>
                             </td>
                         </tr>
                     </table>
@@ -124,7 +138,7 @@
                     <table width="100%" style="text-align: center; background-color: #fff; width: 100%; max-width: 600px;">
                         <tr>
                             <td colspan="3">
-                                <h2 style="text-align: center;">New Movies</h2>
+                                <h2 style="text-align: center;">New Shows</h2>
                             </td>
                         </tr>
                         <tr>
@@ -140,13 +154,13 @@
                         </tr>
                         <tr>
                             <td style="padding: 16px; text-align: center; border-bottom: 1px solid rgb(182, 182, 182);">
-                                <a  href="#" style="background-color:blueviolet; border-radius: 25px; color: #fff; padding:10px; text-decoration: none; font-size: 14px;">Watch Now</a>
+                                <a  href="#" class="btn">Watch Now</a>
                             </td>
                             <td style="padding: 16px; text-align: center; border-bottom: 1px solid rgb(182, 182, 182);">
-                                <a  href="#" style="background-color:blueviolet; border-radius: 25px; color: #fff; padding:10px; text-decoration: none; font-size: 14px;">Watch Now</a>
+                                <a  href="#" class="btn">Watch Now</a>
                             </td>
                             <td style="padding: 16px; text-align: center; border-bottom: 1px solid rgb(182, 182, 182);">
-                                <a  href="#" style="background-color:blueviolet; border-radius: 25px; color: #fff; padding:10px; text-decoration: none; font-size: 14px;">Watch Now</a>
+                                <a  href="#" class="btn">Watch Now</a>
                             </td>
                         </tr>
                     </table>
