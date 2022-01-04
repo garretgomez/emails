@@ -1,234 +1,514 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=yes">
-    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no, url=no">
-    <meta name="x-apple-disable-message-reformatting">
-    <meta name="color-scheme" content="light dark">
-    <meta name="supported-color-schemes" content="light dark">
-     <!--[if mso]>
-    <noscript>
-        <xml>
-        <o:OfficeDocumentSettings>
-            <o:PixelsPerInch>96</o:PixelsPerInch>
-        </o:OfficeDocumentSettings>
-        </xml>
-    </noscript>
-    <![endif]-->
-    <style type="text/css">
-        /*.button{
-            padding: 16px; 
-            text-align: center;
-        }
-        .button a{
-            background-color:blueviolet; border-radius: 25px; color: #fff; padding:10px; text-decoration: none; font-size: 14px;
-        }
-        a:hover{
-            cursor: pointer;
-        }
-        .bottom a:hover{
-            background-color: #000;
-        }*/
-        .btn{
-            background-color:blueviolet; border-radius: 25px; color: #fff; padding:10px; text-decoration: none; font-size: 14px; cursor: pointer;
-        }
-        #banner{
-            width:100%;
-            max-width: 600px;
-        }
-        @media only screen and (max-width: 420px) {
-            table tr td > img:only-child{
-                max-width: 150px;
-                width: 100%;
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+     <head>
+          <!--Help character display properly.-->
+          <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+          <!--Set the initial scale of the email.-->
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <!--Force Outlook clients to render with a better MS engine.-->
+          <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+          <!--Help prevent blue links and autolinking-->
+          <meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+          <!--prevent Apple from reformatting and zooming messages.-->
+          <meta name="x-apple-disable-message-reformatting">
+
+          <!--target dark mode-->
+          <meta name="color-scheme" content="light dark">
+          <meta name="supported-color-schemes" content="light dark only">
+
+          <!-- Allow for better image rendering on Windows hi-DPI displays. -->
+          <!--[if mso]>
+          <noscript>
+          <xml>
+          <o:OfficeDocumentSettings>
+          <o:AllowPNG/>
+          <o:PixelsPerInch>96</o:PixelsPerInch>
+          </o:OfficeDocumentSettings>
+          </xml>
+          </noscript>
+          <![endif]-->
+
+          <!--to support dark mode meta tags-->
+          <style type="text/css">
+               :root {
+                    color-scheme: light dark;
+                    supported-color-schemes: light dark;
+               }
+          </style>
+
+          <!--webfont code goes here-->
+          <!--[if (gte mso 9)|(IE)]><!-->
+          <!--webfont <link /> goes here-->
+          <style>
+               /*Web font over ride goes here
+               h1, h2, h3, h4, h5, p, a, img, span, ul, ol, li { font-family:  Verdana, Geneva, Tahoma, sans-serif !important; } */
+          </style>
+          <!--<![endif]-->
+
+          <style type="text/css">
+               .body-fix {
+                    height: 100% !important;
+                    margin: 0 auto !important;
+                    padding: 0 !important;
+                    width: 100% !important;
+                    -webkit-text-size-adjust: 100%;
+                    -ms-text-size-adjust: 100%;
+                    -webkit-font-smoothing: antialiased;
+                    word-spacing: normal;
+               }
+
+               div[style*="margin:16px 0"] {
+                    margin: 0 !important;
+               }
+
+               table, td {
+                    border-collapse: collapse !important;
+                    mso-table-lspace: 0pt;
+                    mso-table-rspace: 0pt;
+                    -webkit-text-size-adjust: 100%;
+                    -ms-text-size-adjust: 100%;
+               }
+
+               img {
+                    border: 0;
+                    line-height: 100%;
+                    outline: none;
+                    text-decoration: none;
+                    display: block;
+               }
+
+               p, h1, h2, h3 {
+                    padding: 0;
+                    margin: 0;
+               }
+
+               a[x-apple-data-detectors] {
+                    color: inherit !important;
+                    text-decoration: none !important;
+                    font-size: inherit !important;
+                    font-family: inherit !important;
+                    font-weight: inherit !important;
+                    line-height: inherit !important;
+               }
+
+               u+#body a {
+                    color: inherit;
+                    text-decoration: none;
+                    font-size: inherit;
+                    font-family: inherit;
+                    font-weight: inherit;
+                    line-height: inherit;
+               }
+
+               #MessageViewBody a {
+                    color: inherit;
+                    text-decoration: none;
+                    font-size: inherit;
+                    font-family: inherit;
+                    font-weight: inherit;
+                    line-height: inherit;
+               }
+
+               .link:hover { text-decoration: none !important; }
+
+               .mobile { display: none; }
+          </style>
+
+          <!--mobile styles-->
+          <style>
+          @media screen and (max-width:600px) {
+               .w90p { width: 90% !important; }
+               .w95p { width: 95% !important; }
+               .w100p { width: 100% !important; }
+
+               .imgFull {
+                    width: 100% !important;
+                    height: auto !important;
+               }
+
+               .desktop {
+                    width: 0 !important;
+                    display: none !important;
+               }
+
+               .mobile { display: block !important; }
+
+              h1 { font-size: 50px !important; line-height: 60px !important; }
+               .std {
+                    font-size: 16px !important;
+                    line-height: 28px !important;
+                    padding: 0 5px;
+               }
+
+               .cTxt { text-align: center !important; }
+
+               .tPad-0 { padding-top: 0 !important; }
+               .rPad-0 { padding-right: 0 !important; }
+               .lPad-0 { padding-left: 0 !important; }
+               .bPad-30 { padding-bottom: 30px !important; }
+
+               .stack, .center{
+        	    display: block !important;
+                width: 100% !important;
+                max-width: 100% !important;
+                direction: ltr !important;
             }
-            table tr td img{
-                width: 75px;
+            .center{
+            	text-align: center !important; 
+                display: block !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+                float: none !important;
             }
-           /* .button{
-                padding: 7px;
+            ul li a{
+                font-size: 18px;
             }
-            .button a{
-                font-size: 10px;
-            }*/
-            .btn{
-                 background-color:blueviolet; border-radius: 25px; color: #fff; padding:8px; text-decoration: none; font-size: 10px;
-            }
-            #banner{
-                max-width: 420px;
-            }
-        }
-    </style>
+          }
+          </style>
+
+          <!--dark mode styles-->
+          <style>
+          @media (prefers-color-scheme: dark) {
+               /* Shows Dark Mode-Only Content, Like Images */
+               .dark-img {
+                    display: block !important;
+                    width: auto !important;
+                    overflow: visible !important;
+                    float: none !important;
+                    max-height: inherit !important;
+                    max-width: inherit !important;
+                    line-height: auto !important;
+                    margin-top: 0px !important;
+                    visibility: inherit !important;
+               }
+
+               /* Hides Light Mode-Only Content, Like Images */
+               .light-img {
+                    display: none;
+                    display: none !important;
+               }
+
+               /* Custom Dark Mode Background Color */
+               .darkmode { background-color: #100E11 !important; }
+               .darkmode2 { background-color: #020203 !important; }
+               .darkmode3 { background-color: #222023 !important; }
+
+               /* Custom Dark Mode Font Colors */
+               h1, h3, p, span, a { color: #fdfdfd !important; }
+               h2, h2 a { color: #028383 !important; }
+               .white { color: #fdfdfd !important; }
+
+
+               /* Custom Dark Mode Text Link Color */
+               .link { color: #028383 !important; }
+               .footer a.link { color: #fdfdfd !important; }
+          }
+
+          /* Copy dark mode styles for android support */
+          /* Shows Dark Mode-Only Content, Like Images */
+          [data-ogsc] .dark-img {
+               display: block !important;
+               width: auto !important;
+               overflow: visible !important;
+               float: none !important;
+               max-height: inherit !important;
+               max-width: inherit !important;
+               line-height: auto !important;
+               margin-top: 0px !important;
+               visibility: inherit !important;
+          }
+
+          /* Hides Light Mode-Only Content, Like Images */
+          [data-ogsc] .light-img {
+               display: none;
+               display: none !important;
+          }
+
+          /* Custom Dark Mode Background Color */
+          [data-ogsc] .darkmode { background-color: #100E11 !important; }
+          [data-ogsc] .darkmode2 { background-color: #020203 !important; }
+          [data-ogsc] .darkmode3 { background-color: #222023 !important; }
+
+          /* Custom Dark Mode Font Colors */
+          [data-ogsc] h1, [data-ogsc] h3, [data-ogsc] p, [data-ogsc] span, [data-ogsc] a { color: #fdfdfd !important; }
+          [data-ogsc] h2, [data-ogsc] h2 a { color: #028383 !important; }
+          [data-ogsc] .white { color: #fdfdfd !important; }
+
+          /* Custom Dark Mode Text Link Color */
+          [data-ogsc] .link { color: #028383 !important; }
+          [data-ogsc] .footer a.link { color: #fdfdfd !important; }
+          </style>
+
+         <style>
+             /* Correction for keeping white text white in Gmail Dark Mode iOS */
+            u + .body .gmail-screen { background:#000; mix-blend-mode:screen; }
+            u + .body .gmail-difference { background:#000; mix-blend-mode:difference; }
+            u + .body .cta:hover .gmail-screen { background: transparent; mix-blend-mode:normal; }
+            u + .body .cta:hover .gmail-difference { background: transparent; mix-blend-mode:normal; }
+        </style>
+
+
+
+          <!--correct superscripts in Outlook-->
+          <!--[if (gte mso 9)|(IE)]>
+          <style>
+          sup{font-size:100% !important;}
+          </style>
+          <![endif]-->
+          <title></title>
+
 </head>
-<body style="width: 600px; max-width: 100%; margin: 0 auto; padding: 0; box-sizing: border-box; font-family: Verdana, Geneva, Tahoma, sans-serif; background-color: #ccc;">
-    <div role="article" aria-roledescription="email" aria-label="hbo max monthly update">
-        <table style="background-color: #fff; width: 100%; max-width: 600px;">
-            <tr>
-                <td>
-                    <table>
-                        <tr>
-                            <td>
-                                <img src="https://www.dropbox.com/s/x3kcca3l907s1ze/hbo-max.png?raw=1" height="150px"  alt="image of hbo max logo" id="banner" style="max-width: 600px;">
-                            </td>
-                            <td style="color: blueviolet;">
-                                <ul style="list-style: none; padding: 5px; font-size: 24px; text-align: left;">
-                                    <li><a href="#" style="text-decoration: none;">Movies</a></li>
-                                    <li><a href="#" style="text-decoration: none;">Shows</a></li>
-                                    <li><a href="#" style="text-decoration: none;">Originals</a></li>
-                                </ul>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <table style="background-color: #fff; width: 100%; max-width: 600px;">
-                        <tr>
-                            <td>
-                                <h1 style="text-align: center;">Exclusive This Month</h1>
-                                <img src="https://www.dropbox.com/s/iq8ilmclols1utq/jleague.jpg?raw=1" width="600px" alt="image of justice league poster" id="banner" >
-                                <p style="margin:5px 15px; text-align: justify;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius voluptates alias quisquam commodi, in tenetur excepturi illo asperiores voluptatibus iusto aspernatur velit est libero, perspiciatis repellendus enim eum. Rerum, hic.</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="padding: 16px; text-align: center; border-bottom: 1px solid rgb(182, 182, 182);">
-                                <a style="background-color:blueviolet; border-radius: 25px; color: #fff; padding:10px 15px; text-decoration: none;" href="#">Watch Now</a>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <table width="100%" style="text-align: center; background-color: #fff; width: 100%; max-width: 600px;">
-                        <tr>
-                            <td colspan="3">
-                                <h2 style="text-align: center;">New Movies</h2>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img src="https://www.dropbox.com/s/12p3ug4xlkkl7yc/blade.jpg?raw=1" width="150px" alt="blade runner 2049 poster" style="display: block; margin-right: auto; margin-left: auto;">
-                            </td>
-                            <td>
-                                <img src="https://www.dropbox.com/s/16apls8vln9fof7/judas.jpg?raw=1" width="150px" alt="judas and the black messiah poster" style="display: block; margin-right: auto; margin-left: auto;">
-                            </td>
-                            <td>
-                                <img src="https://www.dropbox.com/s/b2tvn3nz339h92e/drsleep.jpg?raw=1" width="150px" alt="doctor sleep poster" style="display: block; margin-right: auto; margin-left: auto;">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="button" style="padding: 16px; text-align: center; border-bottom: 1px solid rgb(182, 182, 182);">
-                                <a  href="#" class="btn">Watch</a>
-                            </td>
-                            <td style="padding: 16px; text-align: center; border-bottom: 1px solid rgb(182, 182, 182);">
-                                <a  href="#" class="btn">Watch</a>
-                            </td>
-                            <td style="padding: 16px; text-align: center; border-bottom: 1px solid rgb(182, 182, 182);">
-                                <a  href="#" class="btn">Watch</a>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <table width="100%" style="text-align: center; background-color: #fff; width: 100%; max-width: 600px;">
-                        <tr>
-                            <td colspan="3">
-                                <h2 style="text-align: center;">New Shows</h2>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img src="https://www.dropbox.com/s/ww34blwpz16pqmf/watchmen.jpg?raw=1" width="150px" alt="watchmen poster" style="display: block; margin-right: auto; margin-left: auto;">
-                            </td>
-                            <td>
-                                <img src="https://www.dropbox.com/s/jsqtts0umv5w739/raised.jpg?raw=1" width="150px" alt="raised by wolves poster" style="display: block; margin-right: auto; margin-left: auto;">
-                            </td>
-                            <td>
-                                <img src="https://www.dropbox.com/s/s91tbcvrjo5pen4/southpark.jpg?raw=1" width="150px" alt="south park poster" style="display: block; margin-right: auto; margin-left: auto;">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="padding: 16px; text-align: center; border-bottom: 1px solid rgb(182, 182, 182);">
-                                <a  href="#" class="btn">Watch</a>
-                            </td>
-                            <td style="padding: 16px; text-align: center; border-bottom: 1px solid rgb(182, 182, 182);">
-                                <a  href="#" class="btn">Watch</a>
-                            </td>
-                            <td style="padding: 16px; text-align: center; border-bottom: 1px solid rgb(182, 182, 182);">
-                                <a  href="#" class="btn">Watch</a>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <table width="100%" style="text-align: center; background-color: #fff; width: 100%; max-width: 600px; padding: 15px 0; font-size: 14px;">
-                        <tr>
-                            <td>
-                                <h2 style="text-align: center;">Available On</h2>
-                                <ul style="text-align: center; padding: 0;">
-                                    <li style="display: inline; padding:5px;">Amazon Fire Tablet</li>
-                                    <li style="display: inline; padding:5px;">Android Phone & Tablet</li>
-                                    <li style="display: inline; padding:5px;">iPhone iPad</li>  
-                                </ul>
-                                <ul style="text-align: center; padding: 0;">
-                                    <li style="display: inline; padding:5px;">Amazon Fire TV</li>
-                                    <li style="display: inline; padding:5px;">Android TV</li>
-                                    <li style="display: inline; padding:5px;">Apple TV</li> 
-                                    <li style="display: inline; padding:5px;">Samsung TV</li> 
-                                </ul>
-                                <ul style="text-align: center; padding: 0;">
-                                    <li style="display: inline; padding:5px;">PS4</li>
-                                    <li style="display: inline; padding:5px;">PS5</li>
-                                    <li style="display: inline; padding:5px;">XBox One</li> 
-                                    <li style="display: inline; padding:5px;">XBox Series X|S</li> 
-                                </ul>
-                                <ul style="text-align: center; padding: 0;">
-                                    <li style="display: inline; padding:5px;">Chrome OS</li>
-                                    <li style="display: inline; padding:5px;">Mac OS</li>
-                                    <li style="display: inline; padding:5px;">Windows</li>  
-                                </ul>
-                                <ul style="text-align: center; padding: 0;"> 
-                                    <li style="display: inline; padding:5px;">Roku</li> 
-                                    <li style="display: inline; padding:5px;">Chromecast</li> 
-                                </ul>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <table width="100%" style="text-align: center; background-color: #fff; width: 100%; max-width: 600px;">
-                        <tr>
-                            <td style="text-align: center; color: rgb(78, 78, 78); padding-bottom: 15px;">
-                                <a href="#">Unsubscribe</a> | <a href="#">Privacy Policy</a> | <a href="#">Account</a> | <a href="#">Support</a> | <a href="#">Terms</a>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <table width="100%" style="text-align: center; background-color: #fff; width: 100%; max-width: 600px;">
-                        <tr>
-                            <td>
-                                <p style="color:rgb(78, 78, 78); margin:0 15px;">HBO Max &trade; Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio maxime commodi excepturi totam dicta, veritatis cumque sed. Laudantium, labore obcaecati.<br>
-                                    HBO road, Los Angeles CA 
-                                </p>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-    </div>
-   
-</body>
+
+     <body id="body" class="darkmode body body-fix">
+          <div role="article" aria-roledescription="email" aria-label="Email from Wonderblum" xml:lang="en" lang="en">
+               <!--hidden preheader with preh-header spacer hack-->
+               <div class="litmus-builder-preview-text" style="display:none;">
+               &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+               </div>
+
+               <!--start of email-->
+               <table class="darkmode" cellpadding="0" cellspacing="0" border="0" role="presentation" style="width:100%; background: #eeeeee; font-family: Verdana, Geneva, Tahoma, sans-serif !important;">
+
+                    <!--main content area-->
+                    <tr>
+                         <td class="tPad-0" align="center" valign="top" style="padding-top: 20px;">
+                              <table class="w100p darkmode2" cellpadding="0" cellspacing="0" border="0" role="presentation" style="width:600px;background-color: #ffffff;">
+                                <tr>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <img src="https://www.dropbox.com/s/x3kcca3l907s1ze/hbo-max.png?raw=1" height="150px"  alt="image of hbo max logo" id="banner" style="max-width: 600px;">
+                                                </td>
+                                                <td style="color: blueviolet;">
+                                                    <ul style="list-style: none; padding: 5px; font-size: 24px; text-align: left;">
+                                                        <li><a href="#" style="text-decoration: none;">Movies</a></li>
+                                                        <li><a href="#" style="text-decoration: none;">Shows</a></li>
+                                                        <li><a href="#" style="text-decoration: none;">Originals</a></li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+
+                                   <tr>
+                                        <td align="center" valign="top" style="padding:0 0 10px;">
+                                             <!--H1 headline-->
+                                             <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif; margin: 0 20px; line-height: 60px; text-align: center; color: #0a080b; font-weight: bold; padding: 10px 5px 5px 5px;">Exclusive This Month</h1>
+                                        </td>
+                                   </tr>
+
+                                   <tr>
+                                        <td align="center" valign="top" style="padding: 0 0 50px;">
+                                             <!--Full width image (no LR padding)-->
+                                            <img src="https://www.dropbox.com/s/iq8ilmclols1utq/jleague.jpg?raw=1"  width="600" height="400" alt="Image of justice league poster" style="width: 100%; max-width: 600px; height: auto; font-size: 18px; line-height: 28px; color: #0A080B;" />
+                                        </td>
+                                    </tr>
+
+                                   <tr>
+                                        <td align="center" valign="top" style="padding:0 0 50px;">
+                                             <!--Intro copy-->
+                                             <p class="std" style="font-family: Verdana, Geneva, Tahoma, sans-serif; margin: 0 20px; font-size: 16px; line-height: 35px; font-weight: normal; color: #0A080B; text-align: justify;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius voluptates alias quisquam commodi, in tenetur excepturi illo asperiores voluptatibus iusto aspernatur velit est libero, perspiciatis repellendus enim eum. Rerum, hic.</p>
+                                        </td>
+                                   </tr>
+
+                                   <tr>
+                                        <td align="center" valign="top" style="padding:0 0 50px;">
+                                             <!--button-->
+                                             <a href="#"  style="background-color: blueviolet; font-size: 18px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight:bold; text-decoration: none; padding: 14px 20px; color: #ffffff; display:inline-block; border-radius: 25px; mso-padding-alt:0;"> <!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%;mso-text-raise:30pt">&nbsp;</i><![endif]--><span style="mso-text-raise:15pt;"><span class="gmail-screen"><span class="gmail-difference">Watch Now</span></span></span><!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%">&nbsp;</i><![endif]--></a>
+                                        </td>
+                                   </tr>
+
+
+                                   <tr>
+                                        <td align="center" valign="top" style="padding:0 30px 50px;">
+                                            <!--Divider-->
+                                            <hr style="border: 0; height: 1px; margin: 0; background: #999;" />
+                                        </td>
+                                    </tr>
+
+                                   <tr>
+                                        <td align="center" valign="top" style="padding: 0 30px 50px;">
+                                             <!--H2 headline-->
+                                             <h2 style="font-family:Verdana, Geneva, Tahoma, sans-serif; margin: 0;font-size: 30px; line-height: 46px; text-align: center; color: #000; font-weight: normal;">New Movies</h2>
+                                        </td>
+                                   </tr>
+
+                                   <!--three column stack for mobile--->
+                                   <tr>
+                                        <td style="padding: 10px; background-color: #ffffff;">
+                                            <table cellspacing="0" cellpadding="0" border="0" width="100%" align="center" role="presentation" style="background: #fff; max-width: 600px; padding: 15px;" >
+                                                <tr>
+                                                    <td valign="top" width="33.3%" class="stack">
+                                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width= "100%">
+                                                            <tr>
+                                                                <td style="padding: 10px; text-align: center;" class="center" id="btn">
+                                                                    <img src="https://www.dropbox.com/s/12p3ug4xlkkl7yc/blade.jpg?raw=1" width="150px" alt="blade runner 2049 poster" style="display: block; margin-right: auto; margin-left: auto; padding-bottom: 15px;">
+                                                                    <a href="#" style =" background-color:blueviolet; border-radius: 25px; color: #fff; padding:10px 15px; text-decoration: none; font-size: 16px; text-align: center;" class="btn">Watch</a>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                    <td valign="top" width="33.3%" class="stack">
+                                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width= "100%">
+                                                            <tr>
+                                                                <td style="padding: 10px; text-align: center;" class="center" id="btn">
+                                                                    <img src="https://www.dropbox.com/s/16apls8vln9fof7/judas.jpg?raw=1" width="150px" alt="judas poster" style="display: block; margin-right: auto; margin-left: auto; padding-bottom: 15px;">
+                                                                    <a href="#" style =" background-color:blueviolet; border-radius: 25px; color: #fff; padding:10px 15px; text-decoration: none; font-size: 16px; text-align: center;" class="btn">Watch</a>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                    <td valign="top" width="33.3%" class="stack">
+                                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width= "100%">
+                                                            <tr>
+                                                                <td style="padding: 10px; text-align: center;" class="center" id="btn">
+                                                                    <img src="https://www.dropbox.com/s/b2tvn3nz339h92e/drsleep.jpg?raw=1" width="150px" alt="dr sleep poster" style="display: block; margin-right: auto; margin-left: auto; padding-bottom: 15px;">
+                                                                    <a href="#" style =" background-color:blueviolet; border-radius: 25px; color: #fff; padding:10px 15px; text-decoration: none; font-size: 16px; text-align: center;" class="btn">Watch</a>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <!-- end three column stack for mobile--->
+
+                                    <tr>
+                                        <td align="center" valign="top" style="padding:0 30px 50px;">
+                                             <!--Divider-->
+                                             <hr style="border: 0; height: 1px; margin: 0; background: #999;" />
+                                        </td>
+                                   </tr>
+
+                                    <tr>
+                                        <td align="center" valign="top" style="padding: 0 30px 50px;">
+                                             <!--H2 headline-->
+                                             <h2 style="font-family: Verdana, Geneva, Tahoma, sans-serif; margin: 0;font-size: 30px; line-height: 46px; text-align: center; color: #000; font-weight: normal;">New Shows</h2>
+                                        </td>
+                                   </tr>
+
+                                   <!--three column stack for mobile--->
+                                   <tr>
+                                    <td style="padding: 10px; background-color: #ffffff;">
+                                        <table cellspacing="0" cellpadding="0" border="0" width="100%" align="center" role="presentation" style="background: #fff; max-width: 600px; padding: 15px;" >
+                                            <tr>
+                                                <td valign="top" width="33.3%" class="stack">
+                                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width= "100%">
+                                                        <tr>
+                                                            <td style="padding: 10px; text-align: center;" class="center" id="btn">
+                                                                <img src="https://www.dropbox.com/s/ww34blwpz16pqmf/watchmen.jpg?raw=1" width="150px" alt="watchmen poster" style="display: block; margin-right: auto; margin-left: auto; padding-bottom: 15px;">
+                                                                <a href="#" style =" background-color:blueviolet; border-radius: 25px; color: #fff; padding:10px 15px; text-decoration: none; font-size: 16px; text-align: center;" class="btn">Watch</a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td valign="top" width="33.3%" class="stack">
+                                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width= "100%">
+                                                        <tr>
+                                                            <td style="padding: 10px; text-align: center;" class="center" id="btn">
+                                                                <img src="https://www.dropbox.com/s/jsqtts0umv5w739/raised.jpg?raw=1" width="150px" alt="raised by wolves poster" style="display: block; margin-right: auto; margin-left: auto; padding-bottom: 15px;">
+                                                                <a href="#" style =" background-color:blueviolet; border-radius: 25px; color: #fff; padding:10px 15px; text-decoration: none; font-size: 16px; text-align: center;" class="btn">Watch</a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td valign="top" width="33.3%" class="stack">
+                                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width= "100%">
+                                                        <tr>
+                                                            <td style="padding: 10px; text-align: center;" class="center" id="btn">
+                                                                <img src="https://www.dropbox.com/s/s91tbcvrjo5pen4/southpark.jpg?raw=1" width="150px" alt="south park poster" style="display: block; margin-right: auto; margin-left: auto; padding-bottom: 15px;">
+                                                                <a href="#" style =" background-color:blueviolet; border-radius: 25px; color: #fff; padding:10px 15px; text-decoration: none; font-size: 16px; text-align: center;" class="btn">Watch</a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <!-- end three column stack for mobile--->
+
+                                   <tr>
+                                        <td align="center" valign="top" style="padding:0 30px 50px;">
+                                             <!--Divider-->
+                                             <hr style="border: 0; height: 1px; margin: 0; background: #999;" />
+                                        </td>
+                                   </tr>
+
+                                   <tr>
+                                        <td>
+                                            <table width="100%" style="text-align: center; background-color: #fff; width: 100%; max-width: 600px; padding: 15px 0; font-size: 14px;">
+                                                <tr>
+                                                    <td>
+                                                        <h2 style="text-align: center;">Available On</h2>
+                                                        <ul style="text-align: center; padding: 0;">
+                                                            <li style="display: inline; padding:5px;">Amazon Fire Tablet</li>
+                                                            <li style="display: inline; padding:5px;">Android Phone & Tablet</li>
+                                                            <li style="display: inline; padding:5px;">iPhone iPad</li>  
+                                                        </ul>
+                                                        <ul style="text-align: center; padding: 0;">
+                                                            <li style="display: inline; padding:5px;">Amazon Fire TV</li>
+                                                            <li style="display: inline; padding:5px;">Android TV</li>
+                                                            <li style="display: inline; padding:5px;">Apple TV</li> 
+                                                            <li style="display: inline; padding:5px;">Samsung TV</li> 
+                                                        </ul>
+                                                        <ul style="text-align: center; padding: 0;">
+                                                            <li style="display: inline; padding:5px;">PS4</li>
+                                                            <li style="display: inline; padding:5px;">PS5</li>
+                                                            <li style="display: inline; padding:5px;">XBox One</li> 
+                                                            <li style="display: inline; padding:5px;">XBox Series X|S</li> 
+                                                        </ul>
+                                                        <ul style="text-align: center; padding: 0;">
+                                                            <li style="display: inline; padding:5px;">Chrome OS</li>
+                                                            <li style="display: inline; padding:5px;">Mac OS</li>
+                                                            <li style="display: inline; padding:5px;">Windows</li>  
+                                                        </ul>
+                                                        <ul style="text-align: center; padding: 0;"> 
+                                                            <li style="display: inline; padding:5px;">Roku</li> 
+                                                            <li style="display: inline; padding:5px;">Chromecast</li> 
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <table width="100%" style="text-align: center; background-color: #fff; width: 100%; max-width: 600px;">
+                                                <tr>
+                                                    <td style="text-align: center; color: rgb(78, 78, 78); padding-bottom: 15px;">
+                                                        <a style="color: rgb(78, 78, 78);" href="#">Unsubscribe</a> | <a style="color: rgb(78, 78, 78);" href="#">Privacy Policy</a> | <a style="color: rgb(78, 78, 78);" href="#">Account</a> | <a style="color: rgb(78, 78, 78);" href="#">Support</a> | <a style="color: rgb(78, 78, 78);" href="#">Terms</a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <table width="100%" style="text-align: center; background-color: #fff; width: 100%; max-width: 600px;">
+                                                <tr>
+                                                    <td>
+                                                        <p style="color:rgb(78, 78, 78); margin:0 15px;">HBO Max &trade; Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio maxime commodi excepturi totam dicta, veritatis cumque sed. Laudantium, labore obcaecati.<br>
+                                                            HBO road, Los Angeles CA 
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+
+                              </table>
+                         </td>
+                    </tr>
+               </table>
+          </div>
+
+     </body>
+
 </html>

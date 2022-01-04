@@ -1,160 +1,607 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=yes">
-    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no, url=no">
-    <meta name="x-apple-disable-message-reformatting">
-    <meta name="color-scheme" content="light dark">
-    <meta name="supported-color-schemes" content="light dark">
-     <!--[if mso]>
-    <noscript>
-        <xml>
-        <o:OfficeDocumentSettings>
-            <o:PixelsPerInch>96</o:PixelsPerInch>
-        </o:OfficeDocumentSettings>
-        </xml>
-    </noscript>
-    <![endif]-->
-    <style type="text/css">
-        *{
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
-        .image{
-            width: 100%; height: 100%; max-height: 200px; max-width: 500px; display: block; object-fit: contain;
-        }
-        /*h1{
-            text-align: center;
-            font-size: 30px;
-            padding: 16px;
-            max-width: 500px;
-        }*/
-        
-        /*.btn{
-            padding: 16px 0 16px 0;
-        }*/
-        
-        @media only screen and (max-width: 420px){
-            table tr td a{
-                padding: 5px;
-            }
-            .image{
-                max-height: 200px;
-                max-width: 500px
-            }
-            /*table tr td img{
-                max-width: 75px;
-                max-height: 50px;
-            }*/
-            table tr td table tr td{
-                padding: 0.5rem;
-                font-size: 14px;
-            }
-        }
-    </style>
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+     <head>
+          <!--Help character display properly.-->
+          <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+          <!--Set the initial scale of the email.-->
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <!--Force Outlook clients to render with a better MS engine.-->
+          <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+          <!--Help prevent blue links and autolinking-->
+          <meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+          <!--prevent Apple from reformatting and zooming messages.-->
+          <meta name="x-apple-disable-message-reformatting">
+
+          <!--target dark mode-->
+          <meta name="color-scheme" content="light dark">
+          <meta name="supported-color-schemes" content="light dark only">
+
+          <!-- Allow for better image rendering on Windows hi-DPI displays. -->
+          <!--[if mso]>
+          <noscript>
+          <xml>
+          <o:OfficeDocumentSettings>
+          <o:AllowPNG/>
+          <o:PixelsPerInch>96</o:PixelsPerInch>
+          </o:OfficeDocumentSettings>
+          </xml>
+          </noscript>
+          <![endif]-->
+
+          <!--to support dark mode meta tags-->
+          <style type="text/css">
+               :root {
+                    color-scheme: light dark;
+                    supported-color-schemes: light dark;
+               }
+          </style>
+
+          <!--webfont code goes here-->
+          <!--[if (gte mso 9)|(IE)]><!-->
+          <!--webfont <link /> goes here-->
+          <style>
+               /*Web font over ride goes here
+               h1, h2, h3, h4, h5, p, a, img, span, ul, ol, li { font-family: 'webfont name', Arial, Helvetica, sans-serif !important; } */
+          </style>
+          <!--<![endif]-->
+
+          <style type="text/css">
+               .body-fix {
+                    height: 100% !important;
+                    margin: 0 auto !important;
+                    padding: 0 !important;
+                    width: 100% !important;
+                    -webkit-text-size-adjust: 100%;
+                    -ms-text-size-adjust: 100%;
+                    -webkit-font-smoothing: antialiased;
+                    word-spacing: normal;
+               }
+
+               div[style*="margin:16px 0"] {
+                    margin: 0 !important;
+               }
+
+               table, td {
+                    border-collapse: collapse !important;
+                    mso-table-lspace: 0pt;
+                    mso-table-rspace: 0pt;
+                    -webkit-text-size-adjust: 100%;
+                    -ms-text-size-adjust: 100%;
+               }
+
+               img {
+                    border: 0;
+                    line-height: 100%;
+                    outline: none;
+                    text-decoration: none;
+                    display: block;
+               }
+
+               p, h1, h2, h3 {
+                    padding: 0;
+                    margin: 0;
+               }
+
+               a[x-apple-data-detectors] {
+                    color: inherit !important;
+                    text-decoration: none !important;
+                    font-size: inherit !important;
+                    font-family: inherit !important;
+                    font-weight: inherit !important;
+                    line-height: inherit !important;
+               }
+
+               u+#body a {
+                    color: inherit;
+                    text-decoration: none;
+                    font-size: inherit;
+                    font-family: inherit;
+                    font-weight: inherit;
+                    line-height: inherit;
+               }
+
+               #MessageViewBody a {
+                    color: inherit;
+                    text-decoration: none;
+                    font-size: inherit;
+                    font-family: inherit;
+                    font-weight: inherit;
+                    line-height: inherit;
+               }
+
+               ul li{
+                    text-decoration: none;
+                    list-style: none;
+                    display: inline !important;
+               }
+
+               .link:hover { text-decoration: none !important; }
+
+               .mobile { display: none; }
+
+          </style>
+
+          <!--mobile styles-->
+          <style>
+          @media screen and (max-width:600px) {
+               .w90p { width: 90% !important; }
+               .w95p { width: 95% !important; }
+               .w100p { width: 100% !important; }
+
+               .imgFull {
+                    width: 100% !important;
+                    height: auto !important;
+               }
+
+               .mobile { display: block !important; }
+
+              h1 { font-size: 50px !important; line-height: 60px !important; }
+               .std {
+                    font-size: 18px !important;
+                    line-height: 28px !important;
+               }
+
+               
+
+               .tPad-0 { padding-top: 0 !important; }
+               .rPad-0 { padding-right: 0 !important; }
+               .lPad-0 { padding-left: 0 !important; }
+               .bPad-30 { padding-bottom: 30px !important; }
+
+          }
+          </style>
+
+          <!--dark mode styles-->
+          <style>
+          @media (prefers-color-scheme: dark) {
+               /* Shows Dark Mode-Only Content, Like Images */
+               .dark-img {
+                    display: block !important;
+                    width: auto !important;
+                    overflow: visible !important;
+                    float: none !important;
+                    max-height: inherit !important;
+                    max-width: inherit !important;
+                    line-height: auto !important;
+                    margin-top: 0px !important;
+                    visibility: inherit !important;
+               }
+
+               /* Hides Light Mode-Only Content, Like Images */
+               .light-img {
+                    display: none;
+                    display: none !important;
+               }
+
+               /* Custom Dark Mode Background Color */
+               .darkmode { background-color: #100E11 !important; }
+               .darkmode2 { background-color: #020203 !important; }
+               
+
+               /* Custom Dark Mode Font Colors */
+               h1, h3, p, span, a { color: #fdfdfd !important; }
+               h2, h2 a { color: #fff !important; }
+
+
+               /* Custom Dark Mode Text Link Color */
+               .link { color: #fff !important; }
+               .footer a.link { color: #fdfdfd !important; }
+          }
+
+          /* Copy dark mode styles for android support */
+          /* Shows Dark Mode-Only Content, Like Images */
+          [data-ogsc] .dark-img {
+               display: block !important;
+               width: auto !important;
+               overflow: visible !important;
+               float: none !important;
+               max-height: inherit !important;
+               max-width: inherit !important;
+               line-height: auto !important;
+               margin-top: 0px !important;
+               visibility: inherit !important;
+          }
+
+          /* Hides Light Mode-Only Content, Like Images */
+          [data-ogsc] .light-img {
+               display: none;
+               display: none !important;
+          }
+
+          /* Custom Dark Mode Background Color */
+          [data-ogsc] .darkmode { background-color: #100E11 !important; }
+          [data-ogsc] .darkmode2 { background-color: #020203 !important; }
+          
+
+          /* Custom Dark Mode Font Colors */
+          [data-ogsc] h1, [data-ogsc] h3, [data-ogsc] p, [data-ogsc] span, [data-ogsc] a { color: #fdfdfd !important; }
+          [data-ogsc] h2, [data-ogsc] h2 a { color: #fff !important; }
+
+          /* Custom Dark Mode Text Link Color */
+          [data-ogsc] .link { color: #fff !important; }
+          [data-ogsc] .footer a.link { color: #fdfdfd !important; }
+          </style>
+
+         <style>
+             /* Correction for keeping white text white in Gmail Dark Mode iOS */
+            u + .body .gmail-screen { background:#000; mix-blend-mode:screen; }
+            u + .body .gmail-difference { background:#000; mix-blend-mode:difference; }
+        </style>
+
+
+
+          <!--correct superscripts in Outlook-->
+          <!--[if (gte mso 9)|(IE)]>
+          <style>
+          sup{font-size:100% !important;}
+          </style>
+          <![endif]-->
+          <title></title>
+
 </head>
-<body style=" margin: 0 auto; box-sizing: border-box; background-color: rgb(219, 219, 219); max-width: 500px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
-    <div role="article" aria-roledescription="email" aria-label="qobuz welcome">
-        <table>
-            <tr>
-                <td>
-                    <table style="background-color: #fff; color: #222; padding: 16px; text-align: center; max-width: 500px;">
-                        <tr>
-                            <td style= "border-bottom: #222 solid 2px; width: 90%;">
-                                <img src="https://www.dropbox.com/s/83crl2rcvwio3g4/qobuz_logo_dark.png?raw=1" width="300px" alt="Image of Qobuz logo" style="max-width: 500px; display: block; margin: 0 auto;">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h1 style="text-align: center; font-size: 30px; padding: 16px; max-width: 500px;">Welcome to Qobuz</h1>
-                                <p>Thank you for choosing our music streaming service. We hope you enjoy our millions of songs with Hi-res Audio.</p>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <table style="background-color: #222; color: #fff; max-width: 500px;">
-                        <tr>
-                            <td colspan="2">
-                                <h1 style="text-align: center; font-size: 30px; padding: 16px; max-width: 500px;">With Qobuz You Can</h1>
-                            </td>
-                        </tr>
-                        <tr style="padding: 16px; line-height: 24px; max-width: 500px;">
-                            <td style="padding: 5px 15px; max-width: 500px;">
-                                <img src="https://www.dropbox.com/s/77xa6yo2g8d9an6/clay-banks-fEVaiLwWvlU-unsplash.jpg?raw=1" alt="Image of records" class="image">
-                            </td>
-                            <td id="desc" style="padding: 1rem; max-width: 500px;">
-                                <h2>Streaming</h2>
-                                <p style="margin-bottom: 10px;">Over 70 million tracks in the best sound quality available for streaming</p>
-                                <a href="#" style=" background-color: #222; text-decoration: none; color: #fff; border: solid 2px #fff; padding: 10px;">Discover Plans</a>
-                            </td>
-                        </tr>
-                        <tr style="padding: 16px; line-height: 24px; max-width: 500px;">
-                            <td style="padding: 5px 15px; max-width: 500px;">
-                                <img src="https://www.dropbox.com/s/kc0lgbbwtt2y7vi/brett-jordan-x3wDxZJx9qs-unsplash.jpg?raw=1"  alt="Image of CD's" class="image">
-                            </td>
-                            <td style="padding: 1rem; max-width: 500px;">
-                                <h2>Download</h2>
-                                <p style="margin-bottom: 10px;">Buy your favorite albums in CD or Hi-Res quality and enjoy them forever</p>
-                                <a href="#" style=" background-color: #222; text-decoration: none; color: #fff; border: solid 2px #fff; padding: 10px;">Shop</a>
-                            </td>
-                        </tr>
-                        <tr style="padding: 16px; line-height: 24px; max-width: 500px;">
-                            <td style="padding: 5px 15px; max-width: 500px;">
-                                <img src="https://www.dropbox.com/s/9b6aty0m7fh5gch/feliphe-schiarolli-oeHaXN3WiLk-unsplash.jpg?raw=1"  alt="Image of playlists on laptops" class="image">
-                            </td>
-                            <td style="padding: 1rem; max-width: 500px;">
-                                <h2>Playlists</h2>
-                                <p style="margin-bottom: 10px;">Discover, listen, and share your favorite playlists</p>
-                                <a href="#" style=" background-color: #222; text-decoration: none; color: #fff; border: solid 2px #fff; padding: 10px;">Discover Playlists</a>
-                            </td>
-                        </tr>
-                        <tr style="padding: 16px; line-height: 24px; max-width: 500px;">
-                            <td style="padding: 5px 15px; max-width: 500px;">
-                                <img src="https://www.dropbox.com/s/c9mbt972y0gd9tq/hires.jpg?raw=1"  alt="Image of Hi-Res Audio logo" class="image">
-                            </td>
-                            <td style="padding: 1rem; max-width: 500px;">
-                                <h2>Hi-Res Audio</h2>
-                                <p style="margin-bottom: 10px;">Hi-Res Audio brings you the best audio available on any platform</p>
-                                <a href="#" style=" background-color: #222; text-decoration: none; color: #fff; border: solid 2px #fff; padding: 10px;">Learn more</a>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <table style=" background-color: #222; color:rgb(82, 82, 82); padding: 16px; max-width: 500px; width: 100%;">
-                        <tr>
-                            <td>
-                                <p>Qobuz &copy; 2021</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p>Help | Support | FAQ</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p>Email sent to by Qobuz</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p>If you no longer wish to receive these emails <a href="#" style="text-decoration: underline; color:rgb(82, 82, 82);">unsubscribe</a></p>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-    </div>
-    
-</body>
+
+     <body id="body" class="darkmode body body-fix">
+          <div role="article" aria-roledescription="email" aria-label="Email from Wonderblum" xml:lang="en" lang="en">
+               <!--hidden preheader with preh-header spacer hack-->
+               <div class="litmus-builder-preview-text" style="display:none;">
+               &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+               </div>
+
+               <!--start of email-->
+               <table class="darkmode" cellpadding="0" cellspacing="0" border="0" role="presentation" style="width:100%; background: #eeeeee;">
+
+                    <!--main content area-->
+                    <tr>
+                         <td class="tPad-0" align="center" valign="top" style="padding-top: 20px;">
+                              <table class="w100p darkmode2" cellpadding="0" cellspacing="0" border="0" role="presentation" style="width:600px; background-color: #ffffff;">
+                                   <tr>
+                                        <td align="center" valign="top" style="padding:30px 20px;">
+                                        <!--Header with logo-->
+
+                                             <!--light mode logo-->
+                                             <a href="#" target="_blank"><img class="light-img" src="https://www.dropbox.com/s/83crl2rcvwio3g4/qobuz_logo_dark.png?raw=1" width="100%" height="100%" alt="qobuz"
+                                             style=" max-width: 300px;color: #4a4a4a; font-family: 'Trebuchet MS', Arial, sans-serif; text-align:center; font-weight:bold; font-size:24px; line-height:28x; text-decoration: none; padding: 0;"></a>
+                                                  <!--dark mode logo-->
+                                                  <!--[if !mso]><! -->
+                                                  <div class="dark-img" style="display:none; overflow:hidden; width:0px; max-height:0px; max-width:0px; line-height:0px; visibility:hidden;" align="center">
+                                                       <img src="https://www.dropbox.com/s/83crl2rcvwio3g4/qobuz_logo_dark.png?raw=1" width="100%" height="100%" alt="qobuz" style="color: #4a4a4a; font-family: 'Trebuchet MS', Arial, sans-serif; text-align:center; font-weight:bold; font-size:24px; line-height:28px; text-decoration: none; padding: 0;" border="0" />
+                                                  </div>
+                                                  <!--<![endif]-->
+                                             </a>
+                                        </td>
+                                   </tr>
+
+                                   <tr>
+                                        <td align="center" valign="top" style="padding:0 30px 0px;">
+                                            <!--Divider-->
+                                            <hr style="border: 0; height: 1px; margin: 0; background: #999;" />
+                                        </td>
+                                    </tr>
+
+                                   <tr>
+                                        <td align="center" valign="top" style="padding:0 0 50px;">
+                                             <!--H1 headline-->
+                                             <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin: 0 20px;font-size: 40px; line-height: 60px; text-align: center; color: #0a080b; font-weight: normal;">Welcome to Qobuz</h1>
+                                        </td>
+                                   </tr>
+
+                                   <tr>
+                                        <td align="center" valign="top" style="padding:0 0 50px;">
+                                             <!--Intro copy-->
+                                             <p class="std" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin: 0 20px; font-size: 20px; line-height: 40px; font-weight: normal; color: #0A080B;">Thank you for choosing our music streaming service. We hope you enjoy our millions of songs with Hi-res Audio.</p>
+                                        </td>
+                                   </tr>
+
+                                   <tr>
+                                        <td align="center" valign="top" style="padding:0 0px 50px;">
+                                            <a href="#"  style="background-color: #fff; font-size: 18px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  text-decoration: none; padding: 14px 20px; color: #000; border: solid 2px #000; display:inline-block; mso-padding-alt:0;"><!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%;mso-text-raise:30pt">&nbsp;</i><![endif]--><span style="mso-text-raise:15pt;"><span class="gmail-screen"><span class="gmail-difference">Start Listening</span></span></span><!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%">&nbsp;</i><![endif]--></a>
+                                        </td>
+                                 </tr>
+
+                                   <tr>
+                                        <td align="center" valign="top" style="padding: 10px 30px 30px; background-color: #fff;">
+                                             <!--H2 headline-->
+                                             <h2 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin: 0;font-size: 30px; line-height: 46px; text-align: center; color: #000; font-weight: normal;">With Qobuz You Can</h2>
+                                        </td>
+                                   </tr>
+
+
+                                   <tr>
+                                        <td align="center" valign="top" style="padding:0 30px 20px; background: #fff; color: #000;">
+                                        <!--2 column - image left (normal stack)-->
+                                             <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+                                                  <tr>
+                                                       <td align="center" valign="top" style="font-size:0;">
+                                                       <!--[if (gte mso 9)|(IE)]>
+                                                       <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="width: 100%;">
+                                                       <tr>
+                                                       <td valign="top" style="width: 255px;">
+                                                       <![endif]-->
+                                                            <div class="rPad-0" style="display:inline-block;vertical-align:top; padding-right: 20px;">
+                                                                 <table class="w100p" cellpadding="0" cellspacing="0" border="0" role="presentation" dir="ltr" style="width: 255px;">
+                                                                      <tr>
+                                                                           <td align="left" valign="top" style="padding-bottom: 30px;">
+                                                                                <img class="imgFull" src="https://www.dropbox.com/s/77xa6yo2g8d9an6/clay-banks-fEVaiLwWvlU-unsplash.jpg?raw=1" alt="Albums on shelf" width="255" height="255" style="font-size: 18px; line-height: 28px; color: #0a080b;">
+                                                                           </td>
+                                                                      </tr>
+                                                                 </table>
+                                                            </div>
+                                                       <!--[if (gte mso 9)|(IE)]>
+                                                       </td><td valign="top" style="width:20px;">
+                                                       </td><td valign="top" style="width:265px;">
+                                                       <![endif]-->
+                                                            <div style="display:inline-block;vertical-align:top;">
+                                                                 <table class="w100p" cellpadding="0" cellspacing="0" border="0" role="presentation" dir="ltr" style="width:265px;">
+                                                                      <tr>
+                                                                           <td align="left" valign="top" style="padding-bottom: 11px;">
+                                                                                <!--H3 heading-->
+                                                                                <h3 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight:bold; font-size:26px; line-height:30px; color:#000; margin:0; padding:0;">
+                                                                                Streaming
+                                                                                </h3>
+                                                                           </td>
+                                                                      </tr>
+                                                                      <tr>
+                                                                           <td align="left" valign="top" style="padding-bottom: 30px;">
+                                                                                <!--Paragraph-->
+                                                                                <p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:18px; line-height:28px; color:#000; margin: 0; padding:0; text-align: left;">Over 70 million tracks in the best sound quality available for streaming</p>
+                                                                           </td>
+                                                                      </tr>
+                                                                      <tr>
+                                                                            <td align="left" valign="top" style="padding:0 0px 50px;">
+                                                                                <a href="#"  style="background-color: #fff; font-size: 18px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  text-decoration: none; padding: 14px 20px; color: #000; border: solid 2px #000; display:inline-block; mso-padding-alt:0;"><!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%;mso-text-raise:30pt">&nbsp;</i><![endif]--><span style="mso-text-raise:15pt;"><span class="gmail-screen"><span class="gmail-difference">Discover Plans</span></span></span><!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%">&nbsp;</i><![endif]--></a>
+                                                                            </td>
+                                                                      </tr>
+                                                                 </table>
+                                                            </div>
+                                                       <!--[if (gte mso 9)|(IE)]>
+                                                       </td>
+                                                       </tr>
+                                                       </table>
+                                                       <![endif]-->
+                                                       </td>
+                                                  </tr>
+                                             </table>
+                                        </td>
+                                   </tr>
+
+
+                                   <tr>
+                                        <td align="center" valign="top" style="padding:0 30px 20px; background: #fff; color: #000;">
+                                             <!--2 column - image right (reverse stack)-->
+                                             <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+                                                  <tr>
+                                                       <td align="center" valign="top" style="font-size:0;" dir="rtl">
+                                                       <!--[if (gte mso 9)|(IE)]>
+                                                       <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="width: 100%;">
+                                                       <tr>
+                                                       <td valign="top" style="width: 255px;">
+                                                       <![endif]-->
+                                                            <div class="lPad-0" style="display:inline-block;vertical-align:top; padding-left: 20px;">
+                                                                 <table class="w100p" cellpadding="0" cellspacing="0" border="0" role="presentation" dir="ltr" style="width: 255px;">
+                                                                      <tr>
+                                                                           <td align="left" valign="top" style="padding-bottom: 30px;">
+                                                                               <img class="imgFull fadeimg" src="https://www.dropbox.com/s/kc0lgbbwtt2y7vi/brett-jordan-x3wDxZJx9qs-unsplash.jpg?raw=1" alt="CD's" width="255" height="255" style="font-size: 18px; line-height: 28px; color: #0a080b;">
+                                                                           </td>
+                                                                      </tr>
+                                                                 </table>
+                                                            </div>
+                                                       <!--[if (gte mso 9)|(IE)]>
+                                                       </td><td valign="top" style="width:20px;">
+                                                       </td><td valign="top" style="width:265px;">
+                                                       <![endif]-->
+                                                            <div style="display:inline-block;vertical-align:top;">
+                                                                 <table class="w100p" cellpadding="0" cellspacing="0" border="0" role="presentation" dir="ltr" style="width:265px;">
+                                                                      <tr>
+                                                                           <td align="left" valign="top" style="padding-bottom: 11px;">
+                                                                                <!--H3 heading-->
+                                                                                <h3 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight:bold; font-size:26px; line-height:30px; color:#000; margin:0; padding:0;">Download</h3>
+                                                                           </td>
+                                                                      </tr>
+                                                                      <tr>
+                                                                           <td align="left" valign="top" style="padding-bottom: 30px;">
+                                                                                <!--Paragraph-->
+                                                                                <p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:18px; line-height:28px; color:#000; margin: 0; padding:0; text-align: left;">Buy your favorite albums in CD or Hi-Res quality and enjoy them forever</p>
+                                                                           </td>
+                                                                      </tr>
+                                                                      <tr>
+                                                                           <td align="left" valign="top" style="padding:0 0px 50px;">
+                                                                               <a href="#"  style="background-color: #fff; font-size: 18px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  text-decoration: none; padding: 14px 20px; color: #000; border: solid 2px #000; display:inline-block; mso-padding-alt:0;"><!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%;mso-text-raise:30pt">&nbsp;</i><![endif]--><span style="mso-text-raise:15pt;"><span class="gmail-screen"><span class="gmail-difference">Shop</span></span></span><!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%">&nbsp;</i><![endif]--></a>
+                                                                           </td>
+                                                                     </tr>
+                                                                 </table>
+                                                            </div>
+                                                       <!--[if (gte mso 9)|(IE)]>
+                                                       </td>
+                                                       </tr>
+                                                       </table>
+                                                       <![endif]-->
+                                                       </td>
+                                                  </tr>
+                                             </table>
+                                        </td>
+                                   </tr>
+
+                                   <tr>
+                                        <td align="center" valign="top" style="padding:0 30px 20px; background: #fff; color: #000;">
+                                        <!--2 column - image left (normal stack)-->
+                                         <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+                                              <tr>
+                                                   <td align="center" valign="top" style="font-size:0;">
+                                                   <!--[if (gte mso 9)|(IE)]>
+                                                   <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="width: 100%;">
+                                                   <tr>
+                                                   <td valign="top" style="width: 255px;">
+                                                   <![endif]-->
+                                                        <div class="rPad-0" style="display:inline-block;vertical-align:top; padding-right: 20px;">
+                                                             <table class="w100p" cellpadding="0" cellspacing="0" border="0" role="presentation" dir="ltr" style="width: 255px;">
+                                                                  <tr>
+                                                                       <td align="left" valign="top" style="padding-bottom: 30px;">
+                                                                            <img class="imgFull" src="https://www.dropbox.com/s/9b6aty0m7fh5gch/feliphe-schiarolli-oeHaXN3WiLk-unsplash.jpg?raw=1" alt="Laptop" width="255" height="255" style="font-size: 18px; line-height: 28px; color: #0a080b;">
+                                                                       </td>
+                                                                  </tr>
+                                                             </table>
+                                                        </div>
+                                                   <!--[if (gte mso 9)|(IE)]>
+                                                   </td><td valign="top" style="width:20px;">
+                                                   </td><td valign="top" style="width:265px;">
+                                                   <![endif]-->
+                                                        <div style="display:inline-block;vertical-align:top;">
+                                                             <table class="w100p" cellpadding="0" cellspacing="0" border="0" role="presentation" dir="ltr" style="width:265px;">
+                                                                  <tr>
+                                                                       <td align="left" valign="top" style="padding-bottom: 11px;">
+                                                                            <!--H3 heading-->
+                                                                            <h3 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight:bold; font-size:26px; line-height:30px; color:#000; margin:0; padding:0;">
+                                                                            Playlists
+                                                                            </h3>
+                                                                       </td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                       <td align="left" valign="top" style="padding-bottom: 30px;">
+                                                                            <!--Paragraph-->
+                                                                            <p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:18px; line-height:28px; color:#000; margin: 0; padding:0; text-align: left;">Discover, listen, and share your favorite playlists</p>
+                                                                       </td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                        <td align="left" valign="top" style="padding:0 0px 50px;">
+                                                                            <a href="#"  style="background-color: #fff; font-size: 18px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  text-decoration: none; padding: 14px 20px; color: #000; border: solid 2px #000; display:inline-block; mso-padding-alt:0;"><!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%;mso-text-raise:30pt">&nbsp;</i><![endif]--><span style="mso-text-raise:15pt;"><span class="gmail-screen"><span class="gmail-difference">Discover Playlists</span></span></span><!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%">&nbsp;</i><![endif]--></a>
+                                                                        </td>
+                                                                 </tr>
+                                                             </table>
+                                                        </div>
+                                                   <!--[if (gte mso 9)|(IE)]>
+                                                   </td>
+                                                   </tr>
+                                                   </table>
+                                                   <![endif]-->
+                                                   </td>
+                                              </tr>
+                                         </table>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td align="center" valign="top" style="padding:0 30px 20px; background: #fff; color: #000;">
+                                             <!--2 column - image right (reverse stack)-->
+                                             <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+                                                  <tr>
+                                                       <td align="center" valign="top" style="font-size:0;" dir="rtl">
+                                                       <!--[if (gte mso 9)|(IE)]>
+                                                       <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="width: 100%;">
+                                                       <tr>
+                                                       <td valign="top" style="width: 255px;">
+                                                       <![endif]-->
+                                                            <div class="lPad-0" style="display:inline-block;vertical-align:top; padding-left: 20px;">
+                                                                 <table class="w100p" cellpadding="0" cellspacing="0" border="0" role="presentation" dir="ltr" style="width: 255px;">
+                                                                      <tr>
+                                                                           <td align="left" valign="top" style="padding-bottom: 30px;">
+                                                                               <img class="imgFull fadeimg" src="https://www.dropbox.com/s/c9mbt972y0gd9tq/hires.jpg?raw=1" alt="Hi-res logo" width="255" height="255" style="font-size: 18px; line-height: 28px; color: #0a080b;">
+                                                                           </td>
+                                                                      </tr>
+                                                                 </table>
+                                                            </div>
+                                                       <!--[if (gte mso 9)|(IE)]>
+                                                       </td><td valign="top" style="width:20px;">
+                                                       </td><td valign="top" style="width:265px;">
+                                                       <![endif]-->
+                                                            <div style="display:inline-block;vertical-align:top;">
+                                                                 <table class="w100p" cellpadding="0" cellspacing="0" border="0" role="presentation" dir="ltr" style="width:265px;">
+                                                                      <tr>
+                                                                           <td align="left" valign="top" style="padding-bottom: 11px;">
+                                                                                <!--H3 heading-->
+                                                                                <h3 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight:bold; font-size:26px; line-height:30px; color:#000; margin:0; padding:0;">Hi-Res Audio</h3>
+                                                                           </td>
+                                                                      </tr>
+                                                                      <tr>
+                                                                           <td align="left" valign="top" style="padding-bottom: 30px;">
+                                                                                <!--Paragraph-->
+                                                                                <p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:18px; line-height:28px; color:#000; margin: 0; padding:0; text-align: left;">Hi-Res Audio brings you the best audio available on any platform </p>
+                                                                      </tr>
+                                                                      <tr>
+                                                                           <td align="left" valign="top" style="padding:0 0px 50px;">
+                                                                               <a href="#"  style="background-color: #fff; font-size: 18px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  text-decoration: none; padding: 14px 20px; color: #000; border: solid 2px #000; display:inline-block; mso-padding-alt:0;"><!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%;mso-text-raise:30pt">&nbsp;</i><![endif]--><span style="mso-text-raise:15pt;"><span class="gmail-screen"><span class="gmail-difference">Learn more</span></span></span><!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%">&nbsp;</i><![endif]--></a>
+                                                                           </td>
+                                                                    </tr>
+                                                                 </table>
+                                                            </div>
+                                                       <!--[if (gte mso 9)|(IE)]>
+                                                       </td>
+                                                       </tr>
+                                                       </table>
+                                                       <![endif]-->
+                                                       </td>
+                                                  </tr>
+                                             </table>
+                                        </td>
+                                   </tr>
+
+                                   <tr>
+                                        <td align="center" valign="top" style="padding:0 30px 50px;">
+                                             <!--Divider-->
+                                             <hr style="border: 0; height: 1px; margin: 0; background: #999;" />
+                                        </td>
+                                   </tr>
+
+                                   <tr>
+                                        <td align="center" valign="top" style="padding:0 0 50px;">
+                                             <!--H1 headline-->
+                                             <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin: 0 20px;font-size: 40px; line-height: 60px; text-align: center; color: #0a080b; font-weight: normal;">Available for Download On</h1>
+                                        </td>
+                                   </tr>
+
+                                   <tr>
+                                        <td align="center" valign="top" style="padding:30px 20px;">
+                                        <!--Header with logo-->
+
+                                             <!--light mode logo-->
+                                             <a href="#" target="_blank"><img class="light-img" src="https://www.dropbox.com/s/jy6cgzvikyn870s/android-app-store-app-store-and-android-icons-11553546864dl6gbnzyt2.png?raw=1" width="100%" height="100%" alt="qobuz"
+                                             style=" max-width: 300px;color: #4a4a4a; font-family: 'Trebuchet MS', Arial, sans-serif; text-align:center; font-weight:bold; font-size:24px; line-height:28x; text-decoration: none; padding: 0;">
+                                                  <!--dark mode logo-->
+                                                  <!--[if !mso]><! -->
+                                                  <div class="dark-img" style="display:none; overflow:hidden; width:0px; max-height:0px; max-width:0px; line-height:0px; visibility:hidden;" align="center">
+                                                       <img src="https://www.dropbox.com/s/jy6cgzvikyn870s/android-app-store-app-store-and-android-icons-11553546864dl6gbnzyt2.png?raw=1" width="100%" height="100%" alt="qobuz" style="color: #4a4a4a; font-family: 'Trebuchet MS', Arial, sans-serif; text-align:center; font-weight:bold; font-size:24px; line-height:28px; text-decoration: none; padding: 0;" border="0" />
+                                                  </div>
+                                                  <!--<![endif]-->
+                                             </a>
+                                        </td>
+                                   </tr>
+
+                                   <tr>
+                                        <td align="center" valign="top" style="padding:0 30px 50px;">
+                                             <!--Divider-->
+                                             <hr style="border: 0; height: 1px; margin: 0; background: #999;" />
+                                        </td>
+                                   </tr>
+
+
+                                   <tr>
+                                        <td class="darkmode footer" align="center" valign="top" style="padding:50px 30px; background: #fff;">
+                                             <!--Footer-->
+                                             <h3>Qobuz &copy; 2021</h3>
+                                   
+                                             <table>
+                                                  <tr>
+                                                       <td><a href="#"><img src="https://www.dropbox.com/s/8ryavls84i8yhol/face.png?raw=1" alt="facebook" width="100%" height="100%" style="max-height: 50px; max-width: 50px; padding:10px"></a></td>
+                                                       <td><a href="#"><img src="https://www.dropbox.com/s/j9853iafd5rks5g/insta.png?raw=1" alt="instagram" width="100%" height="100%" style="max-height: 50px; max-width: 50px; padding:10px;"></a></td>
+                                                       <td><a href="#"><img src="https://www.dropbox.com/s/u738l7w6pr2yqsq/tube.png?raw=1" alt="youtube" width="100%" height="100%" style="max-height: 50px; max-width: 50px; padding:10px;"></a></td>
+                                                       <td><a href="#"><img src="https://www.dropbox.com/s/w70ntmx8it1m19c/twitter.png?raw=1" alt="twitter" width="100%" height="100%" style="max-height: 50px; max-width: 50px; padding:10px;"></a></td>
+                                                  </tr>
+                                             </table>
+                                                 
+                                             <p style="font-family: 'Trebuchet MS', Arial, sans-serif;font-size:14px;line-height:24px;mso-line-height-rule:exactly;color:#0a080b;margin-bottom:20px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae, nostrum.<br><br>
+                                             
+                                             <a href="#" class="link" target="_blank" style="color: #0a080b; text-decoration: underline;">Help</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#" class="link"
+                                             target="_blank" style="color: #0a080b; text-decoration: underline;">Unsubscribe</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#" class="link" target="_blank" style="color: #0a080b; text-decoration: underline;">FAQ</a>
+                                             </p>
+                                        </td>
+                                   </tr>
+
+                              </table>
+                         </td>
+                    </tr>
+               </table>
+          </div>
+
+     </body>
+
 </html>
